@@ -14,7 +14,9 @@
     for(int i = 0; i < 10; i++) {
         [[buttons objectAtIndex:i] setSelected:NO];
     }
-    [[buttons objectAtIndex:bt.tag] setSelected:YES];
+    if(bt.tag > -1) {
+        [[buttons objectAtIndex:bt.tag] setSelected:YES];
+    }
     [protocol setIndex:bt.tag];
 }
 
@@ -23,6 +25,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         protocol = _protocol;
+        
         UIImage* image = [[UIImage alloc] initWithContentsOfFile:[[[NSBundle mainBundle] resourcePath]  stringByAppendingPathComponent:@"menu_back.png"]];
         UIImageView* image_view = [[UIImageView alloc] initWithImage:image];
         [image release];
@@ -30,24 +33,28 @@
         [image_view release];
         
         image = [[UIImage alloc] initWithContentsOfFile:[[[NSBundle mainBundle] resourcePath]  stringByAppendingPathComponent:[NSString stringWithFormat:@"logo.png"]]];
-        UIButton* main_button = [[UIButton alloc] initWithFrame:CGRectMake(37, 31, image.size.width, image.size.height)];
+        UIButton* main_button = [[UIButton alloc] initWithFrame:CGRectMake(37, 31-13, image.size.width, image.size.height)];
         [main_button setImage:image forState:UIControlStateNormal];
         [self addSubview:main_button];
         [main_button setTag:-1];
         [main_button addTarget:self action:@selector(selectbt:) forControlEvents:UIControlEventTouchUpInside];
         [main_button release];
         
+        [protocol setIndex:-1];
+        
         buttons = [[NSMutableArray alloc] init];
-        float y = 151;
+        float y = 151-13;
         float margin = 13;
         
         for(int i = 0; i < 10; i++) {
-            image = [[UIImage alloc] initWithContentsOfFile:[[[NSBundle mainBundle] resourcePath]  stringByAppendingPathComponent:[NSString stringWithFormat:@"btoff_%d.png", i]]];
+            image = [[UIImage alloc] initWithContentsOfFile:[[[NSBundle mainBundle] resourcePath]  stringByAppendingPathComponent:[NSString stringWithFormat:@"btoff%d.png", i]]];
+            off_size = image.size;
             UIButton* bt = [[UIButton alloc] initWithFrame:CGRectMake(margin, y, image.size.width, image.size.height)];
             [bt setImage:image forState:UIControlStateNormal];
             [image release];
             
-            image = [[UIImage alloc] initWithContentsOfFile:[[[NSBundle mainBundle] resourcePath]  stringByAppendingPathComponent:[NSString stringWithFormat:@"bton_%d.png", i]]];
+            image = [[UIImage alloc] initWithContentsOfFile:[[[NSBundle mainBundle] resourcePath]  stringByAppendingPathComponent:[NSString stringWithFormat:@"bton%d.png", i]]];
+            on_size = image.size;
             [bt setImage:image forState:UIControlStateSelected];
             [bt setImage:image forState:UIControlStateHighlighted];
             [bt setSelected:NO];

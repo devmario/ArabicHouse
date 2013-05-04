@@ -11,8 +11,8 @@
 @implementation AHScroll
 
 - (void)setIndex:(int)_idx {
-    return;
-    [image_view removeFromSuperview];
+    if(image_view)
+        [image_view removeFromSuperview];
     
     NSString* path;
     if(_idx > -1)
@@ -26,13 +26,14 @@
     [image_view release];
     [image release];
     [self setContentSize:image_view.frame.size];
+    [self setScrollEnabled:YES];
 }
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        return self;
+        image_view = nil;
         
         for(int i = 0; i < 10; i++) {
             [file_path addObject:[[[NSBundle mainBundle] resourcePath]  stringByAppendingPathComponent:@"menu_back.png"]];

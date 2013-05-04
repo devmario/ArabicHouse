@@ -17,6 +17,8 @@
 @interface AHMenu : UIView {
     NSMutableArray* buttons;
     id <AHMenuProtocol> protocol;
+    CGSize on_size;
+    CGSize off_size;
 }
 
 -(id)initWithFrame:(CGRect)frame withProtocol:(id <AHMenuProtocol>)_protocol;
