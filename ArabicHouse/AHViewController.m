@@ -17,10 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    scroll = [[AHScroll alloc] initWithFrame:self.view.frame withImage:nil];
+    scroll = [[AHScroll alloc] initWithFrame:self.view.frame];
     [self.view addSubview:scroll];
     [scroll release];
-    menu = [[AHMenu alloc] initWithFrame:self.view.frame];
+    menu = [[AHMenu alloc] initWithFrame:self.view.frame withProtocol:scroll];
     [self.view addSubview:menu];
     [menu release];
 	// Do any additional setup after loading the view, typically from a nib.

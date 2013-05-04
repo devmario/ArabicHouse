@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AHMenu.h"
 
-@interface AHScroll : UIScrollView {
+@interface AHScroll : UIScrollView <AHMenuProtocol> {
+    NSMutableArray* file_path;
+    
     UIImageView* image_view;
 }
 
--(id)initWithFrame:(CGRect)frame withImage:(UIImage*)image;
+-(id)initWithFrame:(CGRect)frame;
+- (void)setIndex:(int)_idx;
 
 @end

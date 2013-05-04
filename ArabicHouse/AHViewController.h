@@ -13,10 +13,6 @@
 @interface AHViewController : UIViewController {
     AHScroll* scroll;
     AHMenu* menu;
-    
-    NSMutableArray* file_path;
-    NSMutableArray* data_file_path;
-    UIImage* content_image;
 }
 
 @end

@@ -20,6 +20,8 @@
 		04BF75C21735197B00C564AE /* AHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BF75C01735197B00C564AE /* AHViewController.xib */; };
 		04BF75CD17351B4500C564AE /* AHScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF75CC17351B4500C564AE /* AHScroll.m */; };
 		04BF75D017351B5900C564AE /* AHMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF75CF17351B5900C564AE /* AHMenu.m */; };
+		04BF75D3173521FE00C564AE /* menu_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BF75D2173521FE00C564AE /* menu_back.png */; };
+		04BF75D517352E0E00C564AE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BF75D417352E0E00C564AE /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		04BF75CC17351B4500C564AE /* AHScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHScroll.m; sourceTree = "<group>"; };
 		04BF75CE17351B5900C564AE /* AHMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHMenu.h; sourceTree = "<group>"; };
 		04BF75CF17351B5900C564AE /* AHMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHMenu.m; sourceTree = "<group>"; };
+		04BF75D2173521FE00C564AE /* menu_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_back.png; sourceTree = "<group>"; };
+		04BF75D417352E0E00C564AE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		04BF75991735197B00C564AE = {
 			isa = PBXGroup;
 			children = (
+				04BF75D1173521FE00C564AE /* res */,
 				04BF75AB1735197B00C564AE /* ArabicHouse */,
 				04BF75A41735197B00C564AE /* Frameworks */,
 				04BF75A31735197B00C564AE /* Products */,
@@ -115,6 +120,15 @@
 				04BF75BB1735197B00C564AE /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04BF75D1173521FE00C564AE /* res */ = {
+			isa = PBXGroup;
+			children = (
+				04BF75D417352E0E00C564AE /* logo.png */,
+				04BF75D2173521FE00C564AE /* menu_back.png */,
+			);
+			path = res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +188,8 @@
 				04BF75BA1735197B00C564AE /* Default@2x.png in Resources */,
 				04BF75BC1735197B00C564AE /* Default-568h@2x.png in Resources */,
 				04BF75C21735197B00C564AE /* AHViewController.xib in Resources */,
+				04BF75D3173521FE00C564AE /* menu_back.png in Resources */,
+				04BF75D517352E0E00C564AE /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

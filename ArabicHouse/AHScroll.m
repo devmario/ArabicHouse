@@ -10,16 +10,32 @@
 
 @implementation AHScroll
 
-- (id)initWithFrame:(CGRect)frame withImage:(UIImage*)image
+- (void)setIndex:(int)_idx {
+    return;
+    [image_view removeFromSuperview];
+    
+    NSString* path;
+    if(_idx > -1)
+        path = [NSString stringWithFormat:@"scroll_%d.png", _idx];
+    else
+        path = @"main.png";
+    
+    UIImage* image = [[UIImage alloc] initWithContentsOfFile:[[[NSBundle mainBundle] resourcePath]  stringByAppendingPathComponent:path]];
+    image_view = [[UIImageView alloc] initWithImage:image];
+    [self addSubview:image_view];
+    [image_view release];
+    [image release];
+    [self setContentSize:image_view.frame.size];
+}
+
+- (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
-        if(image) {
-            image_view = [[UIImageView alloc] initWithImage:image];
-            [self addSubview:image_view];
-            [image_view release];
-            [self setContentSize:image_view.frame.size];
+        return self;
+        
+        for(int i = 0; i < 10; i++) {
+            [file_path addObject:[[[NSBundle mainBundle] resourcePath]  stringByAppendingPathComponent:@"menu_back.png"]];
         }
     }
     return self;

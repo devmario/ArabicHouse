@@ -7,13 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AHScroll.h"
+
+@protocol AHMenuProtocol <NSObject>
+
+- (void)setIndex:(int)_idx;
+
+@end
 
 @interface AHMenu : UIView {
     NSMutableArray* buttons;
-    AHScroll* scroll;
+    id <AHMenuProtocol> protocol;
 }
 
--(id)initWithFrame:(CGRect)frame withMenu:(AHScroll*)scroll;
+-(id)initWithFrame:(CGRect)frame withProtocol:(id <AHMenuProtocol>)_protocol;
 
 @end
