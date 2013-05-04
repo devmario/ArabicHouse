@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BF75A61735197B00C564AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BF75A51735197B00C564AE /* UIKit.framework */; };
+		04BF75A81735197B00C564AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BF75A71735197B00C564AE /* Foundation.framework */; };
+		04BF75AA1735197B00C564AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BF75A91735197B00C564AE /* CoreGraphics.framework */; };
+		04BF75B01735197B00C564AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04BF75AE1735197B00C564AE /* InfoPlist.strings */; };
+		04BF75B21735197B00C564AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF75B11735197B00C564AE /* main.m */; };
+		04BF75B61735197B00C564AE /* AHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF75B51735197B00C564AE /* AHAppDelegate.m */; };
+		04BF75B81735197B00C564AE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BF75B71735197B00C564AE /* Default.png */; };
+		04BF75BA1735197B00C564AE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BF75B91735197B00C564AE /* Default@2x.png */; };
+		04BF75BC1735197B00C564AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BF75BB1735197B00C564AE /* Default-568h@2x.png */; };
+		04BF75BF1735197B00C564AE /* AHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF75BE1735197B00C564AE /* AHViewController.m */; };
+		04BF75C21735197B00C564AE /* AHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BF75C01735197B00C564AE /* AHViewController.xib */; };
+		04BF75CD17351B4500C564AE /* AHScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF75CC17351B4500C564AE /* AHScroll.m */; };
+		04BF75D017351B5900C564AE /* AHMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF75CF17351B5900C564AE /* AHMenu.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04BF75A21735197B00C564AE /* ArabicHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArabicHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BF75A51735197B00C564AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04BF75A71735197B00C564AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04BF75A91735197B00C564AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04BF75AD1735197B00C564AE /* ArabicHouse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArabicHouse-Info.plist"; sourceTree = "<group>"; };
+		04BF75AF1735197B00C564AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04BF75B11735197B00C564AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04BF75B31735197B00C564AE /* ArabicHouse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArabicHouse-Prefix.pch"; sourceTree = "<group>"; };
+		04BF75B41735197B00C564AE /* AHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHAppDelegate.h; sourceTree = "<group>"; };
+		04BF75B51735197B00C564AE /* AHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHAppDelegate.m; sourceTree = "<group>"; };
+		04BF75B71735197B00C564AE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		04BF75B91735197B00C564AE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		04BF75BB1735197B00C564AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		04BF75BD1735197B00C564AE /* AHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHViewController.h; sourceTree = "<group>"; };
+		04BF75BE1735197B00C564AE /* AHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHViewController.m; sourceTree = "<group>"; };
+		04BF75C11735197B00C564AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AHViewController.xib; sourceTree = "<group>"; };
+		04BF75CB17351B4500C564AE /* AHScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHScroll.h; sourceTree = "<group>"; };
+		04BF75CC17351B4500C564AE /* AHScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHScroll.m; sourceTree = "<group>"; };
+		04BF75CE17351B5900C564AE /* AHMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHMenu.h; sourceTree = "<group>"; };
+		04BF75CF17351B5900C564AE /* AHMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHMenu.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04BF759F1735197B00C564AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BF75A61735197B00C564AE /* UIKit.framework in Frameworks */,
+				04BF75A81735197B00C564AE /* Foundation.framework in Frameworks */,
+				04BF75AA1735197B00C564AE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BF75991735197B00C564AE = {
+			isa = PBXGroup;
+			children = (
+				04BF75AB1735197B00C564AE /* ArabicHouse */,
+				04BF75A41735197B00C564AE /* Frameworks */,
+				04BF75A31735197B00C564AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04BF75A31735197B00C564AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04BF75A21735197B00C564AE /* ArabicHouse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04BF75A41735197B00C564AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04BF75A51735197B00C564AE /* UIKit.framework */,
+				04BF75A71735197B00C564AE /* Foundation.framework */,
+				04BF75A91735197B00C564AE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04BF75AB1735197B00C564AE /* ArabicHouse */ = {
+			isa = PBXGroup;
+			children = (
+				04BF75B41735197B00C564AE /* AHAppDelegate.h */,
+				04BF75B51735197B00C564AE /* AHAppDelegate.m */,
+				04BF75BD1735197B00C564AE /* AHViewController.h */,
+				04BF75BE1735197B00C564AE /* AHViewController.m */,
+				04BF75CB17351B4500C564AE /* AHScroll.h */,
+				04BF75CC17351B4500C564AE /* AHScroll.m */,
+				04BF75CE17351B5900C564AE /* AHMenu.h */,
+				04BF75CF17351B5900C564AE /* AHMenu.m */,
+				04BF75C01735197B00C564AE /* AHViewController.xib */,
+				04BF75AC1735197B00C564AE /* Supporting Files */,
+			);
+			path = ArabicHouse;
+			sourceTree = "<group>";
+		};
+		04BF75AC1735197B00C564AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04BF75AD1735197B00C564AE /* ArabicHouse-Info.plist */,
+				04BF75AE1735197B00C564AE /* InfoPlist.strings */,
+				04BF75B11735197B00C564AE /* main.m */,
+				04BF75B31735197B00C564AE /* ArabicHouse-Prefix.pch */,
+				04BF75B71735197B00C564AE /* Default.png */,
+				04BF75B91735197B00C564AE /* Default@2x.png */,
+				04BF75BB1735197B00C564AE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04BF75A11735197B00C564AE /* ArabicHouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BF75C51735197B00C564AE /* Build configuration list for PBXNativeTarget "ArabicHouse" */;
+			buildPhases = (
+				04BF759E1735197B00C564AE /* Sources */,
+				04BF759F1735197B00C564AE /* Frameworks */,
+				04BF75A01735197B00C564AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArabicHouse;
+			productName = ArabicHouse;
+			productReference = 04BF75A21735197B00C564AE /* ArabicHouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04BF759A1735197B00C564AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AH;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = com.vanillabreeze;
+			};
+			buildConfigurationList = 04BF759D1735197B00C564AE /* Build configuration list for PBXProject "ArabicHouse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04BF75991735197B00C564AE;
+			productRefGroup = 04BF75A31735197B00C564AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04BF75A11735197B00C564AE /* ArabicHouse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04BF75A01735197B00C564AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BF75B01735197B00C564AE /* InfoPlist.strings in Resources */,
+				04BF75B81735197B00C564AE /* Default.png in Resources */,
+				04BF75BA1735197B00C564AE /* Default@2x.png in Resources */,
+				04BF75BC1735197B00C564AE /* Default-568h@2x.png in Resources */,
+				04BF75C21735197B00C564AE /* AHViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04BF759E1735197B00C564AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BF75B21735197B00C564AE /* main.m in Sources */,
+				04BF75B61735197B00C564AE /* AHAppDelegate.m in Sources */,
+				04BF75BF1735197B00C564AE /* AHViewController.m in Sources */,
+				04BF75CD17351B4500C564AE /* AHScroll.m in Sources */,
+				04BF75D017351B5900C564AE /* AHMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04BF75AE1735197B00C564AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BF75AF1735197B00C564AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04BF75C01735197B00C564AE /* AHViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BF75C11735197B00C564AE /* en */,
+			);
+			name = AHViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04BF75C31735197B00C564AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		04BF75C41735197B00C564AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04BF75C61735197B00C564AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArabicHouse/ArabicHouse-Prefix.pch";
+				INFOPLIST_FILE = "ArabicHouse/ArabicHouse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		04BF75C71735197B00C564AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArabicHouse/ArabicHouse-Prefix.pch";
+				INFOPLIST_FILE = "ArabicHouse/ArabicHouse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04BF759D1735197B00C564AE /* Build configuration list for PBXProject "ArabicHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BF75C31735197B00C564AE /* Debug */,
+				04BF75C41735197B00C564AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BF75C51735197B00C564AE /* Build configuration list for PBXNativeTarget "ArabicHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BF75C61735197B00C564AE /* Debug */,
+				04BF75C71735197B00C564AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04BF759A1735197B00C564AE /* Project object */;
+}
